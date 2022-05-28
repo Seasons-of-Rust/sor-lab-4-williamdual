@@ -1,4 +1,4 @@
-use core::time;
+use core::{time};
 use std::thread;
 
 use rand::Rng;
@@ -10,7 +10,10 @@ mod shop;
 mod strings;
 
 pub enum FightResult {
-    // TODO: Add variants for win, loss, tie, and draw
+    Win,
+    Loss,
+    Draw,
+    Tie,
 }
 
 fn main() {
