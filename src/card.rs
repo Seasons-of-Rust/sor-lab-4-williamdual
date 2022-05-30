@@ -11,11 +11,11 @@ pub struct Card {
 
 impl Card {
     pub fn fight(&self, other: &Card) -> FightResult {
-        match(self.damage >= other.health, other.damage >= self.health){
-            (true,true) => FightResult::Tie,
-            (true,false) => FightResult::Win,
-            (false,true) => FightResult::Loss,
-            (false,false) => FightResult::Draw,
+        match (self.damage >= other.health, other.damage >= self.health) {
+            (true, true) => FightResult::Tie,
+            (true, false) => FightResult::Win,
+            (false, true) => FightResult::Loss,
+            (false, false) => FightResult::Draw,
         }
     }
 

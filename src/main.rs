@@ -1,4 +1,4 @@
-use core::{time};
+use core::time;
 use std::thread;
 
 use rand::Rng;
