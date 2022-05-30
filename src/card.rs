@@ -33,7 +33,7 @@ impl Card {
             FightResult::Draw => println!("It's a draw!"),
         }
 
-        println!(); 
+        println!();
 
         fight_result
     }

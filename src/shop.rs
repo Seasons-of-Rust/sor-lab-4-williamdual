@@ -30,9 +30,9 @@ impl Shop {
         let mut losses: u32 = 0;
 
         let mut other_cards = other.cards.iter();
-        
-        for card in &self.cards{
-            match card.print_fight(other_cards.next().unwrap()){
+
+        for card in &self.cards {
+            match card.print_fight(other_cards.next().unwrap()) {
                 FightResult::Win => wins += 1,
                 FightResult::Loss => losses += 1,
                 _ => (), //ties and draws dont really matter
