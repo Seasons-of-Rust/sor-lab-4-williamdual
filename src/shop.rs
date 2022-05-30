@@ -33,9 +33,9 @@ impl Shop {
         
         for card in &self.cards{
             match card.print_fight(other_cards.next().unwrap()){
-                    FightResult::Win => wins += 1,
-                    FightResult::Loss => losses += 1,
-                    _ => (), //ties and draws dont really matter
+                FightResult::Win => wins += 1,
+                FightResult::Loss => losses += 1,
+                _ => (), //ties and draws dont really matter
             }
         }
         //after the fights have happened
